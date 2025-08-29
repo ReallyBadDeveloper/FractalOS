@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FractalOS</title>
+        <link rel="shortcut icon" href="./icons/logo/icon_light.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./styles/boot.css">
+        <link rel="stylesheet" href="./styles/main.css">
+	</head>
+	<body>
+        <div class="fos desktop">
+        </div>
+        <div class="fos taskbar-container">
+            <div class="fos taskbar">
+                <button class="fos taskbar-icon" title="Start">
+                    <img src="./icons/logo/icon_dark.svg">
+                </button><pad></pad>
+                <button class="fos taskbar-icon" title="Unknown app">
+                    <img src="./icons/logo/icon_unknown_dark.svg">
+                </button><pad></pad>
+                <button class="fos taskbar-icon" title="Show hidden icons">
+                    <img src="./icons/logo/icon_arrow_dark.svg">
+                </button><pad></pad>
+                <button class="fos taskbar-icon unbound" title="Time & date">
+                    <p id="clock" class="talign-right">12:00 AM<br>1/1/1970</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="boot background">
+            <div class="boot container">
+                <img src="./icons/browser/broswer_chrome.svg" class="boot mfg-icon"><br>
+                <progress class="boot progress" min="0" value="0" max="100"></progress>
+            </div>
+        </div> 
+
+        <script src="./scripts/boot.js"></script>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>

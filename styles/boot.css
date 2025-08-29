@@ -1,0 +1,44 @@
+.boot.background {
+	opacity: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	fill: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.boot.mfg-icon {
+	aspect-ratio: 1 / 1;
+	height: 25vh;
+	padding-bottom: 100px;
+}
+
+.boot.progress {
+    display: none;
+	border-radius: 11px;
+	width: 100%;
+	height: 15px;
+}
+.boot.progress::-webkit-progress-bar {
+	background-color: gray;
+	border-radius: 11px;
+}
+.boot.progress::-webkit-progress-value {
+	background-color: white;
+	border-radius: 11px;
+}
+@keyframes fadeout {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,134 @@
+:root {
+    --accent-hue: 270deg;
+    --accent: hsl(var(--accent-hue), 45%, 65%)
+}
+
+@font-face {
+    font-family: DM Sans;
+    src: url('../fonts/DMSans.ttf');
+}
+
+@font-face {
+    font-family: DM Sans Italic;
+    src: url('../fonts/DMSansItalic.ttf');
+}
+
+* {
+    font-family: DM Sans, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: url("../images/background.png");
+    backdrop-filter: hue-rotate(var(--accent-hue));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.fos.taskbar-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.fos.taskbar {
+    display: flex;
+    height: 40px;
+    padding: 7px;
+    background-color: rgba(255,255,255,0.4);
+    border: 1px solid white;
+    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    pointer-events: auto;
+}
+
+.fos.taskbar-icon {
+    user-select: none;
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    transition-duration: 0.15s;
+    background-color: rgba(255,255,255,0);
+}
+
+.fos.taskbar-icon:hover {
+    transform: scale(1.1);
+    background-color: rgba(255,255,255,0.6);
+}
+
+.fos.taskbar-icon:active {
+    background-color: rgba(255,255,255,1);
+}
+
+.fos.taskbar-icon img {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    
+}
+
+.fos.taskbar-icon * {
+    margin: 0;
+    transition-duration: 0.15s;
+}
+
+.fos.taskbar-icon:active * {
+    transform: scale(0.9);
+}
+
+.fos.taskbar-icon.unbound {
+    aspect-ratio: initial !important;
+}
+
+.fos.desktop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 90px);
+}
+
+.fos.desktop-select {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 500px;
+    height: 300px;
+    background-color: var(--accent);
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.fos.window {
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    border: 1.5px solid var(--accent);
+    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.2);   
+}
+
+.fos.window .fos.titlebar {
+    width: 100%;
+    height: 30px;
+    border-radius: 7px 7px 0px 0px;
+    background: var(--accent);
+}
+
+.talign-right {
+    text-align: right;
+}
+
+pad {
+    padding: 2.5px;
+}
