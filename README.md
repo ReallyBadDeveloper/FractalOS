@@ -5,10 +5,7 @@
 If you want to help with development, consider [forking this repository](https://github.com/ReallyBadDeveloper/FractalOS/fork) and [creating a pull request](https://github.com/ReallyBadDeveloper/FractalOS/pulls).
 
 FractalOS is a psuedo operating system written in vanilla HTML, CSS, and JavaScript, designed to extend the functionality of devices like Chromebooks.
-# How To Use
-1. Download the files by clicking `Code` > `Download ZIP`.
-2. Unzip the downloaded archive.
-3. Open `index.html` in the browser of your choice (currently only tested in Chrome v139).
-5. Enjoy!
+# Installation
+Read [INSTALL.md](/INSTALL.md) for information on how to install.
 # License
 FractalOS is licensed under the [GNU Affero General Public License v3.0](https://github.com/ReallyBadDeveloper/FractalOS/blob/main/LICENSE). You are free to modify and distribute this software for commercial or private use.
